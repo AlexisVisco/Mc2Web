@@ -1,0 +1,33 @@
+{
+    "name": "apimatic/mc2web",
+    "type": "library",
+    "description": "Easy way to send informations to the website.",
+    "keywords": ["Mc2Web","API","SDK"],
+    "homepage": "https://apimatic.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehdi Jaffery",
+            "email": "mehdi.jaffery@apimatic.io",
+            "homepage": "https://github.com/apimatic",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "mashape/unirest-php": "~3.0.1",
+        "apimatic/jsonmapper": "~1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+        "autoload": {
+        "psr-4": {
+            "Mc2WebLib\\": "src/"
+        }
+    }
+}
