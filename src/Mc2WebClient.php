@@ -18,11 +18,13 @@ class Mc2WebClient
      * Constructor with authentication and configuration parameters
      */
     public function __construct(
-        $basicAuthUserName = null,
-        $basicAuthPassword = null
+        $basicAuthUserName,
+        $basicAuthPassword,
+        $BASEURI
     ) {
-        Configuration::$basicAuthUserName = $basicAuthUserName ? $basicAuthUserName : Configuration::$basicAuthUserName;
-        Configuration::$basicAuthPassword = $basicAuthPassword ? $basicAuthPassword : Configuration::$basicAuthPassword;
+        Configuration::$basicAuthUserName = $basicAuthUserName;
+        Configuration::$basicAuthPassword = $basicAuthPassword;
+        Configuration::$BASEURI = $BASEURI;
     }
  
     /**
