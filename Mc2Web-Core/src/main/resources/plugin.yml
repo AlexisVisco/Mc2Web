@@ -1,0 +1,10 @@
+author: Kwizzy
+version: 1.0
+name: Mc2Web
+main: fr.kwizzy.app.Mc2Web
+commands:
+  link-account:
+  consolestream:
+
+
+
