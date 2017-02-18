@@ -113,6 +113,7 @@ In order to setup authentication and initialization of the API client, you need 
 |-----------|-------------|
 | basicAuthUserName | The username to use with basic authentication |
 | basicAuthPassword | The password to use with basic authentication |
+| BASEURI | The url like http://domain:port |
 
 
 
@@ -122,6 +123,7 @@ API client can be initialized as following.
 // Configuration parameters and credentials
 $basicAuthUserName = "basicAuthUserName"; // The username to use with basic authentication
 $basicAuthPassword = "basicAuthPassword"; // The password to use with basic authentication
+$uri = "http://domain:port"; //The url of the rest service !
 
 $client = new Mc2WebLib\Mc2WebClient($basicAuthUserName, $basicAuthPassword);
 ```
