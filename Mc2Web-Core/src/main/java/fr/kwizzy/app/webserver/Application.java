@@ -24,7 +24,6 @@ public class Application
 {
 
     private static Config config = Config.getInstance();
-    @Getter
     private static WebServer webServer = new WebServer();
     private static boolean   auth      = true;
 
@@ -129,5 +128,10 @@ public class Application
         Mc2Web.toConsole("§cStopping MC2WEB ...");
         Spark.stop();
 
+    }
+
+    public static WebServer getWebServer()
+    {
+        return webServer;
     }
 }
